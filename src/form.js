@@ -90,7 +90,7 @@ export default function Form({ setWords }) {
     setLengthError(false);
 
     const url = process.env.REACT_APP_API_URL + "?word=" + inputText;
-    const res = await fetch(url);
+    const res = await fetch(url).catch((err) => console.error(err));
     const data = await res.json();
 
     setWords(data);
