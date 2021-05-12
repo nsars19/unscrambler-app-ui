@@ -13,6 +13,10 @@ const StyledContainer = styled.div`
     div {
       font-size: 1.1rem;
     }
+
+    &:last-child {
+      margin-bottom: 30px;
+    }
   }
 `;
 
