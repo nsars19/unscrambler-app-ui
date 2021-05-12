@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/unscrambler-app-ui/static/js/main.2761c00f.chunk.js",
+    "main.js.map": "/unscrambler-app-ui/static/js/main.2761c00f.chunk.js.map",
+    "runtime-main.js": "/unscrambler-app-ui/static/js/runtime-main.c46df871.js",
+    "runtime-main.js.map": "/unscrambler-app-ui/static/js/runtime-main.c46df871.js.map",
+    "static/js/2.f09b6cf1.chunk.js": "/unscrambler-app-ui/static/js/2.f09b6cf1.chunk.js",
+    "static/js/2.f09b6cf1.chunk.js.map": "/unscrambler-app-ui/static/js/2.f09b6cf1.chunk.js.map",
+    "index.html": "/unscrambler-app-ui/index.html",
+    "static/js/2.f09b6cf1.chunk.js.LICENSE.txt": "/unscrambler-app-ui/static/js/2.f09b6cf1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c46df871.js",
+    "static/js/2.f09b6cf1.chunk.js",
+    "static/js/main.2761c00f.chunk.js"
+  ]
+}
