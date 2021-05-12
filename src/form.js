@@ -24,7 +24,7 @@ const StyledForm = styled.form`
     padding: 6px;
     height: 50px;
     border-style: none;
-    border: 1px solid ${colors.black};
+    border: 1px solid ${colors.lightGray};
     outline: none;
 
     &:focus {
@@ -34,6 +34,7 @@ const StyledForm = styled.form`
 
   input[type="text"] {
     width: 400px;
+    border-right: none;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
   }
@@ -42,6 +43,7 @@ const StyledForm = styled.form`
     font-size: 16px;
     padding-left: 25px;
     padding-right: 25px;
+    border: 1px solid ${colors.gray};
     border-left: none;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
