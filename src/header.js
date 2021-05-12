@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Wave from "./waves";
 
 const StyledHeader = styled.header`
   position: absolute;
@@ -7,6 +8,7 @@ const StyledHeader = styled.header`
   width: 100%;
   padding-left: 20px;
   padding-top: 20px;
+
   h1 {
     font-size: 3rem;
   }
@@ -18,9 +20,12 @@ const StyledHeader = styled.header`
 
 export default function Header() {
   return (
-    <StyledHeader>
-      <h1>Scrambler</h1>
-      <h3>words within words</h3>
-    </StyledHeader>
+    <>
+      <Wave />
+      <StyledHeader>
+        <h1>Scrambler</h1>
+        <h3>words within words</h3>
+      </StyledHeader>
+    </>
   );
 }
