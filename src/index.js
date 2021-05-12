@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import { createGlobalStyle } from "styled-components";
+import { colors } from "./colors";
 
 const GlobalStyle = createGlobalStyle`
   *,
@@ -15,6 +16,8 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Oswald', Courier, sans-serif;
     font-size: 16px;
+    background: ${colors.white};
+    color: ${colors.black};
   }
 `;
 
