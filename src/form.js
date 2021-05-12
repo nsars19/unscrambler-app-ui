@@ -85,7 +85,7 @@ export default function Form({ setWords }) {
     const url = process.env.REACT_APP_API_URL + "?word=" + inputText;
     const res = await fetch(url);
     const data = await res.json();
-    // console.log(data);
+
     setWords(data);
     setLoadStatus(false);
   };
