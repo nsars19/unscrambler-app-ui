@@ -3,8 +3,11 @@ import styled from "styled-components";
 import uniqid from "uniqid";
 
 const StyledContainer = styled.div`
-  .section-wrap {
+  div.section-wrap {
     padding: 10px 20px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
 
     h2 {
       font-size: 2rem;
@@ -12,6 +15,8 @@ const StyledContainer = styled.div`
 
     div {
       font-size: 1.1rem;
+      max-width: 600px;
+      text-align: center;
     }
 
     &:last-child {
@@ -26,7 +31,7 @@ export default function WordsContainer({ words }) {
       <div
         className="section-wrap"
         key={uniqid()}
-        style={{ display: vals.length > 0 ? "block" : "none" }}
+        style={{ display: vals.length > 0 ? "flex" : "none" }}
       >
         <h2>{key}</h2>
         <div>
