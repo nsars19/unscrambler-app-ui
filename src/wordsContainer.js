@@ -19,8 +19,12 @@ const StyledContainer = styled.div`
 export default function WordsContainer({ words }) {
   const mapWords = () =>
     Object.entries(words).map(([key, vals]) => (
-      <div className="section-wrap" key={uniqid()}>
-        <h2>{vals.length > 0 ? key : ""}</h2>
+      <div
+        className="section-wrap"
+        key={uniqid()}
+        style={{ display: vals.length > 0 ? "block" : "none" }}
+      >
+        <h2>{key}</h2>
         <div>
           {vals.map((val, idx) => (
             <React.Fragment key={uniqid()}>
