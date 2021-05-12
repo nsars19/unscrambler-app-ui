@@ -11,6 +11,11 @@ const StyledForm = styled.form`
   justify-content: center;
   font-size: 1rem;
 
+  h2 {
+    margin-bottom: 8px;
+    margin-left: 3px;
+  }
+
   .input-wrap {
     position: relative;
   }
@@ -94,6 +99,7 @@ export default function Form({ setWords }) {
     <>
       <StyledForm onSubmit={handleSubmit}>
         <div className="input-wrap">
+          <h2>Type a word and get started!</h2>
           <input type="text" value={inputText} onChange={handleInputChange} />
           <input type="submit" value="Scramble!" />
           <LengthError vis={lengthError} setLengthError={setLengthError} />
