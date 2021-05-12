@@ -11,7 +11,8 @@ const StyledLoader = styled.div`
   width: 300px;
   background: ${colors.lightGray};
   color: ${colors.black};
-  border: 50px solid ${colors.lightGray};
+  border: 50px solid ${colors.gray};
+  border-top-color: ${colors.red};
   border-radius: 28px;
   overflow: hidden;
   animation: lights 1500ms ease infinite;
@@ -57,20 +58,28 @@ const StyledLoader = styled.div`
   }
 
   @keyframes lights {
-    0% {
+    25% {
       border-top-color: ${colors.red};
-    }
-    33% {
-      border-top-color: ${colors.gray};
-      border-bottom-color: ${colors.gray};
-      border-right-color: ${colors.red};
-    }
-    66% {
-      border-bottom-color: ${colors.red};
       border-right-color: ${colors.gray};
+      border-bottom-color: ${colors.gray};
       border-left-color: ${colors.gray};
     }
-    99% {
+    50% {
+      border-top-color: ${colors.gray};
+      border-right-color: ${colors.red};
+      border-bottom-color: ${colors.gray};
+      border-left-color: ${colors.gray};
+    }
+    75% {
+      border-top-color: ${colors.gray};
+      border-right-color: ${colors.gray};
+      border-bottom-color: ${colors.red};
+      border-left-color: ${colors.gray};
+    }
+    100% {
+      border-top-color: ${colors.gray};
+      border-right-color: ${colors.gray};
+      border-bottom-color: ${colors.gray};
       border-left-color: ${colors.red};
     }
   }
