@@ -26,7 +26,7 @@ const StyledForm = styled.form`
   }
 
   input {
-    padding: 6px;
+    padding: 13px 6px;
     height: 50px;
     border-style: none;
     border: 1px solid ${colors.lightGray};
@@ -38,6 +38,8 @@ const StyledForm = styled.form`
   }
 
   input[type="text"] {
+    font-size: 1rem;
+    min-height: 50px;
     width: 400px;
     border-right: none;
     border-top-left-radius: 8px;
@@ -48,7 +50,7 @@ const StyledForm = styled.form`
     font-size: 16px;
     padding-left: 25px;
     padding-right: 25px;
-    border: 1px solid ${colors.gray};
+    border: 1px solid transparent;
     border-left: none;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
