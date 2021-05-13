@@ -4,11 +4,16 @@ import WordsContainer from "./wordsContainer";
 
 export default function Display() {
   const [words, setWords] = useState({});
+  const [wordsVisibile, setModalVis] = useState(false);
 
   return (
     <>
-      <Form setWords={setWords} />
-      <WordsContainer words={words} />
+      <Form setWords={setWords} setModalVis={setModalVis} />
+      <WordsContainer
+        words={words}
+        vis={wordsVisibile}
+        setModalVis={setModalVis}
+      />
     </>
   );
 }

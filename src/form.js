@@ -76,7 +76,7 @@ const StyledForm = styled.form`
   }
 `;
 
-export default function Form({ setWords }) {
+export default function Form({ setWords, setModalVis }) {
   const [inputText, setInputText] = useState("");
   const [lengthError, setLengthError] = useState(false);
   const [isLoading, setLoadStatus] = useState(false);
@@ -102,6 +102,8 @@ export default function Form({ setWords }) {
 
     setWords(data);
     setLoadStatus(false);
+    setModalVis(true);
+    setInputText("");
   };
 
   return (
