@@ -1,16 +1,11 @@
-import { useState } from "react";
-import Form from "./form";
 import Header from "./header";
-import WordsContainer from "./wordsContainer";
+import Display from "./display";
 
 function App() {
-  const [words, setWords] = useState({});
-
   return (
     <>
       <Header />
-      <Form setWords={setWords} />
-      <WordsContainer words={words} />
+      <Display />
     </>
   );
 }
